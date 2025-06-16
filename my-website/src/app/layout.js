@@ -9,26 +9,26 @@ export const metadata = {
 
 function Header(){
   return (
-    <header className="bg-slate-500 py-4">
+    <header className="bg-[#4A4E69] py-4">
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-end h-16">
           <div>
-            <Link href="/" className="text-lg font-semibold text-gray-800 hover:text-gray-600">
+            <Link href="/" className="text-lg font-semibold text-[#F9F5F2] hover:text-[#9A8C98]">
               Home
             </Link>
-            <Link href="/projects" className="ml-15 text-lg font-semibold text-gray-800 hover:text-gray-600">
+            <Link href="/projects" className="ml-15 text-lg font-semibold text-[#F9F5F2] hover:text-[#9A8C98]">
               Projects
             </Link>
-            <Link href="/photography" className="ml-15 text-lg font-semibold text-gray-800 hover:text-gray-600">
+            <Link href="/photography" className="ml-15 text-lg font-semibold text-[#F9F5F2] hover:text-[#9A8C98]">
               Photography
             </Link> 
-            <Link href="/research" className="ml-15 text-lg font-semibold text-gray-800 hover:text-gray-600">
+            <Link href="/research" className="ml-15 text-lg font-semibold text-[#F9F5F2] hover:text-[#9A8C98]">
               Research
             </Link> 
-            <Link href="/about" className="ml-15 text-lg font-semibold text-gray-800 hover:text-gray-600">
+            <Link href="/about" className="ml-15 text-lg font-semibold text-[#F9F5F2] hover:text-[#9A8C98]">
               About 
             </Link>
-            <Link href="/contact" className="ml-15 text-lg font-semibold text-gray-800 hover:text-gray-600">
+            <Link href="/contact" className="ml-15 text-lg font-semibold text-[#F9F5F2] hover:text-[#9A8C98]">
               Contact
             </Link>
           </div>
