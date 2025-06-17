@@ -9,9 +9,9 @@ export const metadata = {
 
 function Header(){
   return (
-    <header className="bg-[#4A4E69] py-4">
+    <header className="bg-[#4A4E69] bg-[radial-gradient(circle_at_top_right,_#6c6f91,_#4A4E69)] py-4">
       <div className="container mx-auto px-4">
-        <nav className="flex items-center justify-end h-16">
+        <nav className="flex items-center justify-end h-10">
           <div>
             <Link href="/" className="text-lg font-semibold text-[#F9F5F2] hover:text-[#9A8C98]">
               Home
