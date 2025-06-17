@@ -1,6 +1,7 @@
 //import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: "Create Next App",
@@ -12,6 +13,17 @@ function Header(){
     <header className="bg-[#4A4E69] bg-[radial-gradient(circle_at_top_right,_#6c6f91,_#4A4E69)] py-4">
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-end h-10">
+          <div className="flex pl-10 mr-auto">
+            <Link href="/">
+              <Image 
+                src="/images/Initials.png" 
+                alt="Logo"
+                width={50}
+                height={50}
+                className="object-contain"
+              />
+            </Link>
+          </div>
           <div>
             <Link href="/" className="text-lg font-semibold text-[#F9F5F2] hover:text-[#9A8C98]">
               Home
