@@ -31,7 +31,16 @@ export default function Home() {
                 <FaInstagram className="hover:text-[#f0e6d2] transition" />
               </a>
             </div>
+
+            {/* Resume Link */}
+            <a href="/FlemingResume.pdf" download>
+              <button 
+                className="bg-[#F9F5F2] hover:bg-[#726D81] text-[#22223B] font-semibold py-2 px-4 rounded shadow mt-6">
+                Download my resume here!
+              </button>
+            </a>
           </div>
+          
 
           {/* Bio */}
           <div className="flex-1 min-w-[300px] text-left text-[#F9F5F2] text-xl">

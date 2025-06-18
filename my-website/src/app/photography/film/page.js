@@ -22,7 +22,8 @@ export default function Page() {
       </h1>
 
       {/* Masonry Grid */}
-        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4">        {images.map(({ index, isVertical }) => (
+        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">        
+            {images.map(({ index, isVertical }) => (
           <div
             key={index}
             className={`w-full break-inside-avoid bg-cover bg-center ${
@@ -30,7 +31,6 @@ export default function Page() {
           }`}
             style={{
             backgroundImage: `url('/api/image?name=film/Film${index}.jpg')`,
-            borderColor: "#22223B",
             }}
         />
 
