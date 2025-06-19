@@ -33,10 +33,7 @@ function Header(){
             </Link>
             <Link href="/photography" className="ml-15 text-lg font-semibold text-[#F9F5F2] hover:text-[#9A8C98]">
               Photography
-            </Link> 
-            <Link href="/research" className="ml-15 text-lg font-semibold text-[#F9F5F2] hover:text-[#9A8C98]">
-              Research
-            </Link> 
+            </Link>  
             <Link href="/experience" className="ml-15 text-lg font-semibold text-[#F9F5F2] hover:text-[#9A8C98]">
               Experience 
             </Link>
