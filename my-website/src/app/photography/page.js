@@ -30,7 +30,7 @@ export default async function Page(){
             <div className="flex gap-6 flex-nowrap justify-center mt-6 overflow-x-auto">
                 <div
                 className="flex-shrink-0 w-[30%] min-w-[250px] lg:w-[30%] aspect-[10/7] bg-cover bg-center select-none pointer-events-none"
-                style={{backgroundImage: "url('/api/image?name=fenway/FenwayALSGame_SarahFleming-030.jpg')"}}
+                style={{backgroundImage: "url('/api/image?name=sports/Sports12.jpg')"}}
                 />
                 <div
                 className="flex-shrink-0 w-[30%] min-w-[250px] lg:w-[30%] aspect-[10/7] bg-cover bg-center select-none pointer-events-none"
