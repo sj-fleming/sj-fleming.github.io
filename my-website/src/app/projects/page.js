@@ -3,20 +3,30 @@ export default async function Page() {
     {
       name: "EagleOps Peer Evaluation",
       video: "/EagleOps.mp4", // Replace this with your actual video filename in /public
-      skills: ["React", "Next.js", "Tailwind CSS"],
+      skills: ["Django", "Python", "HTML", "CSS", "Render"],
       description:
-        "A brief description of the project that highlights key features, purpose, and your role.",
-      link: "https://github.com/CSCI3356-Spring2025/EagleOps#"
+        "I worked on a team to develop a full-stack web application in Django to streamline peer evaluations for academic or team settings. Integrated Google OAuth for user authentication and account access, implemented SQL databases to manage user and admin data, set up automated email notifications for evaluation reminders and status updates, and collaborated on a user-friendly interface to improve usability and engagement.",
+      link: "https://github.com/CSCI3356-Spring2025/EagleOps#",
+      msg: "Click here to view the code on GitHub🔗"
     },
     {
-      name: "Project Two",
-      image: "/project2.png",
-      skills: ["Node.js", "Express", "MongoDB"],
+      name: "BConnect",
+      video: "/BConnect.mp4",
+      skills: ["Figma", "Market Research", "Team Collaboration"],
       description:
-        "Another project with an overview of technologies used and functionality.",
-        link: ""
+        "In my Entrepreneurial Management class, I joined a team of 5 to develop a startup idea, conduct market research, and built a MVP. I led the design of the UX/UI for a campus events app using Figma, creating multiple page layouts and interactive prototypes. My team conducted market research to inform design decisions, improving user engagement.",
+        link: "https://www.figma.com/proto/3Vpi7hzkwGvKfRebvMcaFU/BConnect?node-id=82-142&p=f&t=as0xskGuSy5F6ZXW-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2",
+        msg: "Click here to view BConnect on Figma🔗"
     },
-    // Add more projects as needed
+    {
+        name: "Critical Review Essay: How Has AI Made Us Reevaluate What it Means to Be Human?",
+        image: "/Essay.png",
+        skills: ["Research", "Critical Thinking", "Writing"],
+        description:
+            "Written for my Technology and Culture class, this essay explores human interaction with AI. As AI has advanced in its ability to replicate human emotions and interactions, it is important to explore what sets us apart from the machines we've created.",
+        link: "/Critical Review Essay.pdf",
+        msg: "Click here to view the essay📄"
+    }
   ];
 
   return (
@@ -33,9 +43,9 @@ export default async function Page() {
               <h2 className="text-xl font-semibold mb-4">{project.name}</h2>
               <div className="flex flex-col md:flex-row gap-4">
                 
-                {/* Video (only for first project) or Image */}
+                {/* Video or Image */}
                 <div className="flex-shrink-0 w-full md:w-1/3">
-                  {index === 0 && project.video ? (
+                  {project.video ? (
                     <video
                       src={project.video}
                       autoPlay
@@ -56,18 +66,18 @@ export default async function Page() {
                 {/* Skills and Description */}
                 <div className="flex-grow space-y-2">
                   <div>
-                    <h3 className="font-medium text-gray-700">Skills Used:</h3>
-                    <ul className="list-disc list-inside text-sm text-gray-600">
+                    <h3 className="font-medium">Skills Used:</h3>
+                    <ul className="list-disc list-inside text-sm">
                       {project.skills.map((skill, i) => (
                         <li key={i}>{skill}</li>
                       ))}
                     </ul>
                   </div>
-                  <p className="text-sm text-gray-700">{project.description}</p>
+                  <p className="text-sm">{project.description}</p>
                   <a href= {project.link}>
                     <button 
                         className="bg-[#F9F5F2] hover:bg-[#726D81] text-[#22223B] font-semibold py-2 px-4 rounded shadow mt-6">
-                        Click here to view the code on GitHub🔗
+                        {project.msg}
                     </button>
                 </a>
                 </div>

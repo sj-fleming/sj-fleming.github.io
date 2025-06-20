@@ -19,16 +19,16 @@ export default function Home() {
             {/* Social Media Links */}
             <div className="flex gap-7 mt-4 text-[#F9F5F2] text-4xl pt-5">
               <a href="mailto:sjfleming22@gmail.com" aria-label="Email" target="_blank" rel="noopener noreferrer">
-                <FaEnvelope className="hover:text-[#f0e6d2] transition" />
+                <FaEnvelope className="hover:text-[#726D81] transition" />
               </a>
               <a href="https://github.com/sj-fleming" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
-                <FaGithub className="hover:text-[#f0e6d2] transition" />
+                <FaGithub className="hover:text-[#726D81] transition" />
               </a>
               <a href="https://www.linkedin.com/in/sarahj-fleming/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin className="hover:text-[#f0e6d2] transition" />
+                <FaLinkedin className="hover:text-[#726D81] transition" />
               </a>
               <a href="https://instagram.com/sjf.photo" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-                <FaInstagram className="hover:text-[#f0e6d2] transition" />
+                <FaInstagram className="hover:text-[#726D81] transition" />
               </a>
             </div>
 
