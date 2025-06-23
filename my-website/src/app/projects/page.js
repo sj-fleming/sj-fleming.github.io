@@ -26,6 +26,15 @@ export default async function Page() {
             "Written for my Technology and Culture class, this essay explores human interaction with AI. As AI has advanced in its ability to replicate human emotions and interactions, it is important to explore what sets us apart from the machines we've created.",
         link: "/Critical Review Essay.pdf",
         msg: "Click here to view the essay📄"
+    },
+    {
+        name: "This website!",
+        image: "/React.png",
+        skills: ["React", "Next.js", "Tailwind CSS", "HTML"],
+        description:
+            "I taught myself React through a LinkedIn Learning course, and was able to use React along with my prior knowledge of HTML and CSS to build this website. I learned how to style pages using Tailwind CSS, embed videos and links, create clean image presentations, and use Email.js to create a functional contact form.",
+        link: "https://github.com/sj-fleming/SarahFlemingWebsite",
+        msg: "Click here to view the code on GitHub🔗"
     }
   ];
 
@@ -74,7 +83,7 @@ export default async function Page() {
                     </ul>
                   </div>
                   <p className="text-sm">{project.description}</p>
-                  <a href= {project.link}>
+                  <a href= {project.link} target="_blank" rel="noopener noreferrer">
                     <button 
                         className="bg-[#F9F5F2] hover:bg-[#726D81] text-[#22223B] font-semibold py-2 px-4 rounded shadow mt-6">
                         {project.msg}

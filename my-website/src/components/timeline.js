@@ -8,20 +8,51 @@ const timelineData = [
   },
   {
     date: "May 2025",
-    description: "Article published for The Heights.",
+    description: (
+      <>
+        Article published for <em>The Heights</em>,{" "}
+        <a
+          href="https://www.bcheights.com/2025/06/04/dave-matthews-band-closes-out-boston-calling-with-an-epic-two-hour-set/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-blue-400 transition-colors duration-200"
+        >
+          &quot;Dave Matthews Band Closes Out Boston Calling With an Epic Two-Hour Set&quot;
+        </a>
+      </>
+    ),
   },
   {
-    date: "March 2025",
-    description: "Presented final project for Deep Learning course.",
+    date: "May 2025",
+    description: "Presented final project, EagleOps Peer Assessments for Software Engineering course.",
   },
+  {
+    date: "December 2024",
+    description: (
+      <>
+      Elected as Photo Editor for the 107th board of<em>The Heights</em>. {" "} 
+      </>
+    )
+  },
+  {
+    date: "June 2024",
+    description: "Completed a study abroad program on Art and Architecture in Vienna, Austria."
+  },
+  {
+    date: "December 2023",
+    description: (
+      <>
+      Elected as Assistant Photo Editor for the 106th board of<em>The Heights</em>. {" "} 
+      </>
+    )
+  }
 ];
+
 
 export default function CustomTimeline() {
   return (
     <div className="relative flex flex-col items-start py-10 pl-10">
-      {/* Absolute vertical line aligned with the dots */}
-      <div className="absolute top-12 bottom-0 left-[calc(26%-1rem)] w-px bg-[#F9F5F2]" />
-
+      
       {timelineData.map((item, index) => (
         <div
           key={index}
