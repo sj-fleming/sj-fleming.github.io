@@ -1,7 +1,7 @@
 {
   "name": "my-website",
   "version": "0.1.0",
-  "homepage": "https://sj-fleming.github.io/react-gh-pages",
+  "homepage": "https://sj-fleming.github.io",
   "private": true,
   "scripts": {
     "predeploy": "npm run build",
@@ -9,7 +9,8 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "gh-pages": "npm run build && npx gh-pages -d build"
   },
   "dependencies": {
     "next": "15.3.3",
