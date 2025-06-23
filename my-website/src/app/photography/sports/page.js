@@ -30,7 +30,7 @@ export default function Page() {
             isVertical ? "aspect-[2/3]" : "aspect-[3/2]"
           }`}
             style={{
-            backgroundImage: `url('/api/image?name=sports/Sports${index}.jpg')`,
+            backgroundImage: `url('/assets/images/sports/Sports${index}.jpg')`,
             }}
         />
 

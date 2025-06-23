@@ -15,7 +15,7 @@ export default function Home() {
             {/* Profile Image */}
             <div
             className="w-[400px] h-[450px] rounded-md bg-cover bg-center select-none pointer-events-none"
-            style={{backgroundImage: "url('/api/image?name=376A0314.jpg')"}}
+            style={{backgroundImage: "url('/assets/images/376A0314.jpg')"}}
             />
 
             {/* Social Media Links */}
