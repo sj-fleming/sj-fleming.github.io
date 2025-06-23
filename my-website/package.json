@@ -1,20 +1,24 @@
 {
   "name": "my-website",
   "version": "0.1.0",
+  "homepage": "https://sj-fleming.github.io/react-gh-pages",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out",
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "next": "15.3.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.3.3"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^4"
   }
 }
